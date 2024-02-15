@@ -1,0 +1,3 @@
+$StorageName = Read-Host -Prompt "Enter Storage Account Name"
+$RGName = Read-Host -Prompt "Enter Resource Group Name"
+New-AzStorageAccount -Name $StorageName -access-tier hot -kind StorageV2 -resource-group $RGName
